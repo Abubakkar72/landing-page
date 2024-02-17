@@ -1,0 +1,422 @@
+
+//Desktop
+.des{
+    /* Desktop */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+isolation: isolate;
+
+position: absolute;
+width: 1920px;
+height: 1080px;
+// left: 3538px;
+// top: 587px;
+overflow: scroll;
+overflow-y: hidden;
+// overflow-x: hidden;
+background: #FFFFFF;
+border: 1px solid #000000;
+}
+
+//Navigation
+.navigation{
+    /* Navigation A */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 80px;
+    gap: 176px;
+
+
+    position: absolute;
+    width: 1756px;
+    height: 64px;
+    left: 0px;
+    top: 0px;
+
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 5;
+    flex-grow: 0;
+    z-index: 5;
+    .logo{
+        /* Logo */
+
+        width: 185px;
+        height: 51px;
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+
+    }
+    .frame{
+        /* Frame 14 */
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 120px;
+
+        // width: 454px;
+        height: 26px;
+
+        filter: drop-shadow(0px 0px 4px #FFFFFF);
+
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+
+    }
+    .logo2{
+        /* Logo2 */
+
+        width: 0px;
+        height: 100px;
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+
+    }
+
+}
+
+//Hero
+.hero{
+    /* Hero E */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 160px;
+    gap: 64px;
+    isolation: isolate;
+
+    width: stretch;
+    height: 1080px;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 26.56%, rgba(0, 0, 0, 0.75) 71.35%), url(https://s3-alpha-sig.figma.com/img/f234/db39/c8d5557ec57e38235f6162d11fe4555b?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Fs6SrSWBQlmIppQVMbxEDowfUf6rWpq1j~jHKezvRl-kgXMUBUpd7CFc7KYWPwIir0aEvdVHc7mrzCs2ffgt4y4yImRUU~cRUBro1bmV3oWEg~L1ZFB9Tz2-U~gUa2d-JsNdOduUSryqolbmRgViaevOyqJQlEAhT1nmB8EDUtuB3d19pkQ7gNnytSyR90eFNET2s4xfr4bDg18K2f4D3sahyff7wVY6ysDshQQNfjtc2ZW~zPoxrYhcr-WPS3u4QB8hWwbLkM6fF5Kz66wybtR315a3uNlHm~P87IBeKAxgPg0Lf3OnnpmET-R43pvaA69C6vdD3TZ1naAPjZjfNA__);
+    background-size: cover; /* or contain, or specific size */
+    background-position: center; /* or other position */
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 0;
+
+    .rectangle{
+        /* Rectangle 5 */
+
+        position: absolute;
+        height: 48px;
+        left: 0px;
+        right: 0px;
+        bottom: 200px;
+
+        background: #6A45FF;
+        color: white;
+        font-size: 32px;
+        
+        
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        z-index: 0;
+    }
+
+    .logo2{
+        /* Logo */
+
+        width: 549.56px;
+        height: 145.4px;
+
+        position: absolute;
+        top: 560px;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        z-index: 1;
+
+
+    }
+
+    .bodyL{
+        /* Body L */
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0px 233px;
+        color: white;
+        font-size: 32px;
+        
+
+        width: 1600px;
+        height: 144px;
+
+        position: absolute;
+        top: 820px;
+        right: 0px;
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 2;
+        align-self: stretch;
+        flex-grow: 0;
+        z-index: 2;
+
+    }
+
+    .frame25{
+        /* Frame 25 */
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+
+        width: 66px;
+        height: 98px;
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 3;
+        flex-grow: 0;
+        z-index: 3;
+
+    }
+
+}
+
+
+// Responsive Styles
+
+@media screen and (max-width: 768px){
+    .des{
+        /* mobile: HOME */
+
+        position: absolute;
+        width: 375px;
+        height: 812px;
+        left: 5881px;
+        top: 587px;
+        overflow-y: scroll;
+        background: #FFFFFF;
+
+    }
+
+    .navigation{
+        /* Frame 3598 */
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 16px;
+        gap: 10px;
+
+        position: absolute;
+        height: 48px;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+
+        background: rgba(255, 255, 255, 0.85);
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(4px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        .logo{
+            /* Logo */
+    
+            margin: 0 auto;
+            width: 124px;
+            height: 34.18px;
+    
+    
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+    
+        }
+
+        .frame{
+            /* Group 3546 */
+    
+            margin: 0 auto;
+            width: 20px;
+            height: 16px;
+    
+    
+            /* Inside auto layout */
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+    
+        }
+
+    }
+
+    .hero{
+        /* Hero E */
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0px;
+        gap: 40px;
+
+        width: 375px;
+        height: 554px;
+
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 26.56%, rgba(0, 0, 0, 0.75) 71.35%), url(https://s3-alpha-sig.figma.com/img/f234/db39/c8d5557ec57e38235f6162d11fe4555b?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Fs6SrSWBQlmIppQVMbxEDowfUf6rWpq1j~jHKezvRl-kgXMUBUpd7CFc7KYWPwIir0aEvdVHc7mrzCs2ffgt4y4yImRUU~cRUBro1bmV3oWEg~L1ZFB9Tz2-U~gUa2d-JsNdOduUSryqolbmRgViaevOyqJQlEAhT1nmB8EDUtuB3d19pkQ7gNnytSyR90eFNET2s4xfr4bDg18K2f4D3sahyff7wVY6ysDshQQNfjtc2ZW~zPoxrYhcr-WPS3u4QB8hWwbLkM6fF5Kz66wybtR315a3uNlHm~P87IBeKAxgPg0Lf3OnnpmET-R43pvaA69C6vdD3TZ1naAPjZjfNA__);
+        background-size: cover; /* or contain, or specific size */
+        background-position: center; /* or other position */
+        /* Inside auto layout */
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+
+        .logo2{
+            /* Logo */
+    
+            // width: 263.64px;
+            // height: 69.75px;
+    
+            // position: absolute;
+            // top: 360px;
+    
+            // /* Inside auto layout */
+            // flex: none;
+            // order: 0;
+            // flex-grow: 0;
+            width: 263.64px;
+            height: 69.75px;
+            display: flex;
+            position: absolute;
+            top: 250px;
+
+    
+        }
+        .rectangle{
+            /* Body L */
+
+            /* Auto layout */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0px;
+            gap: 16px;
+            font-size: 28px;
+
+            width: 375px;
+            height: 159px;
+            background-color: inherit;
+            position: absolute;
+            top: 300px;
+
+
+            /* Inside auto layout */
+            flex: none;
+            order: 2;
+            align-self: stretch;
+            flex-grow: 0;
+
+        }
+        .bodyL{
+             /* Body L */
+
+            /* Auto layout */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0px;
+            gap: 16px;
+            font-size: 28px;
+            text-align: center;
+
+            width: 375px;
+            height: 159px;
+
+            position: absolute;
+            top: 500px;
+
+            /* Inside auto layout */
+            flex: none;
+            order: 2;
+            align-self: stretch;
+            flex-grow: 0;
+        }
+
+        .frame25{
+            /* Frame 3651 */
+
+            /* Auto layout */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0px;
+            gap: 8px;
+
+            width: 66px;
+            height: 66px;
+
+
+            /* Inside auto layout */
+            flex: none;
+            order: 3;
+            flex-grow: 0;
+
+        }
+    }
+    
+}
+
+
+
+
+
