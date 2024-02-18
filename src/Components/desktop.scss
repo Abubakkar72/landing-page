@@ -3,25 +3,47 @@
 .des{
     /* Desktop */
 
-box-sizing: border-box;
+// box-sizing: border-box;
 
 /* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-isolation: isolate;
+// display: flex;
+// flex-direction: column;
+// align-items: flex-start;
+// padding: 0px;
+// isolation: isolate;
 
-position: absolute;
-width: 1920px;
-height: 1080px;
+// position: absolute;
+// width: 1920px;
+// height: 1080px;
 // left: 3538px;
 // top: 587px;
-overflow: scroll;
-overflow-y: hidden;
+// overflow: scroll;
+// overflow-y: scroll;
 // overflow-x: hidden;
-background: #FFFFFF;
-border: 1px solid #000000;
+// background: #FFFFFF;
+// border: 1px solid #000000;
+
+    /* Desktop */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    isolation: isolate;
+
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    // left: 3538px;
+    // top: 587px;
+    overflow-y: scroll;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+
 }
 
 //Navigation
@@ -33,12 +55,12 @@ border: 1px solid #000000;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 80px;
+    // padding: 14px 80px;
     gap: 176px;
 
 
     position: absolute;
-    width: 1756px;
+    width: 1920px;
     height: 64px;
     left: 0px;
     top: 0px;
@@ -51,6 +73,7 @@ border: 1px solid #000000;
     order: 5;
     flex-grow: 0;
     z-index: 5;
+
     .logo{
         /* Logo */
 
@@ -111,11 +134,11 @@ border: 1px solid #000000;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding: 0px 160px;
+    // padding: 0px 160px;
     gap: 64px;
     isolation: isolate;
 
-    width: stretch;
+    width: 1920px;
     height: 1080px;
 
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 26.56%, rgba(0, 0, 0, 0.75) 71.35%), url(https://s3-alpha-sig.figma.com/img/f234/db39/c8d5557ec57e38235f6162d11fe4555b?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Fs6SrSWBQlmIppQVMbxEDowfUf6rWpq1j~jHKezvRl-kgXMUBUpd7CFc7KYWPwIir0aEvdVHc7mrzCs2ffgt4y4yImRUU~cRUBro1bmV3oWEg~L1ZFB9Tz2-U~gUa2d-JsNdOduUSryqolbmRgViaevOyqJQlEAhT1nmB8EDUtuB3d19pkQ7gNnytSyR90eFNET2s4xfr4bDg18K2f4D3sahyff7wVY6ysDshQQNfjtc2ZW~zPoxrYhcr-WPS3u4QB8hWwbLkM6fF5Kz66wybtR315a3uNlHm~P87IBeKAxgPg0Lf3OnnpmET-R43pvaA69C6vdD3TZ1naAPjZjfNA__);
@@ -140,6 +163,7 @@ border: 1px solid #000000;
         background: #6A45FF;
         color: white;
         font-size: 32px;
+        width: 1920px;
         
         
 
@@ -176,7 +200,7 @@ border: 1px solid #000000;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        padding: 0px 233px;
+        // padding: 0px 233px;
         color: white;
         font-size: 32px;
         
@@ -186,7 +210,8 @@ border: 1px solid #000000;
 
         position: absolute;
         top: 820px;
-        right: 0px;
+        left: 150px;
+        
 
 
         /* Inside auto layout */
@@ -223,6 +248,911 @@ border: 1px solid #000000;
 
 }
 
+//BodyG
+.bodyG{
+    /* Body L */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+    gap: 64px;
+    isolation: isolate;
+
+    width: 1920px;
+    height: 1174px;
+
+    background: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 1;
+
+    .rectangle2{
+        /* Rectangle 4 */
+       
+
+
+        position: absolute;
+        width: 280px;
+        height: 1174px;
+        left: calc(50% - 280px/2);
+        // top: 0px;
+        // bottom: 0px;
+
+        background: #6A45FF;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        z-index: 0;
+
+    }
+
+    .frame16{
+        /* Frame 16 */
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        padding-top: 180px;
+        gap: 8px;
+        color: white;
+
+
+        width: 174px;
+        height: 110px;
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        z-index: 1;
+
+        p{
+            font-size: 26px;
+        }
+
+        span{
+            font-size: 24px;
+        }
+
+    }
+
+    .frame17{
+        /* Frame 17 */
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding-top: 380px;
+
+        width: 1920px;
+        height: 600px;
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 2;
+        align-self: stretch;
+        flex-grow: 1;
+        z-index: 2;
+
+        .rectangle3{
+            /* Rectangle
+
+            Image Block
+            */
+
+            /* Auto layout */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 40px;
+
+            width: 640px;
+            height: 600px;
+
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-alpha-sig.figma.com/img/40f8/c545/7746a488a1416d22e0b8b405b3300bf2?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bL3DJOB3p3uWeTssl3vN3zqvweoJ6YudR1-u-0mW82LOsmKPpwT72MyywUCkIm1JCBuo9DR3hm546E2yev3~~Zuu31j-UKiTT1Jh9CjXJPzmcTnMUGFWt~uT-~VDAjOmDWKz3bexil70mc5oxFj9IHVmh20ALjp0l6jT9SknOER-JMT84NMlVFZOHTFN6YYFgKZ9oKsVhv9wvd6cetAtsBZMgmrnPzDYHwr55JlOoy4AIgYslcv6WVM~0tOsf1OLB3QkvRqDA-GGR1k7DYrLzTU1XDCkvWhdMTCmxwwGnwx1CcxxtRqnllaY4qzD2eACAmJjylpQvSQKP9FNoX1Uxw__);
+            background-size: cover;
+            background-position: center; /* or other position */
+            /* Inside auto layout */
+            background-repeat: no-repeat;
+
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 1;
+
+            .number{
+                /* 01 */
+
+                width: 449.04px;
+                height: 38px;
+
+                /* Ja/24px-Medium */
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 160%;
+                /* or 38px */
+                text-align: center;
+                letter-spacing: 0.3em;
+
+                color: #FFFFFF;
+
+
+                /* Inside auto layout */
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+
+            }
+            .title{
+                /* 保有総トン数三河No.1 */
+
+                width: 449.04px;
+                height: 104px;
+
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 52px;
+                /* or 162% */
+                text-align: center;
+                letter-spacing: 0.3em;
+
+                color: #FFFFFF;
+
+
+                /* Inside auto layout */
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+
+            }
+            .description{
+                /* 大型重機を複数台取り扱い、日本でも今のところ十数台しかないような重機も保有。地域的にトップクラス数と種類を取り揃える。 */
+
+                width: 434px;
+                height: 60px;
+
+                /* Ja/20px-Regular */
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 150%;
+                /* or 30px */
+                text-align: center;
+                letter-spacing: 0.05em;
+
+                color: #FFFFFF;
+
+
+                /* Inside auto layout */
+                flex: none;
+                order: 2;
+                flex-grow: 0;
+
+            }
+
+        }
+        .rectangle4{
+             /* Rectangle
+
+            Image Block
+            */
+
+            /* Auto layout */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 40px;
+
+            width: 640px;
+            height: 600px;
+
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-alpha-sig.figma.com/img/40c0/f50b/46b2300f00a14d64a977ec879165fcc1?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jxaOjfpfv1~d3nArtq0EsT~07kEI7eZVrmFXaksMPNnKD1qy-YXeXlyWclxuc9fUAgyIhDlXLT~JEURY3UxmJE8t1rGY6HNMbSozN2aOvEHOfxUkBApTnZYXKJsYgs-YrdX4DhC8fI6rxso~JnvIJsaoBVTsStSfd9mAR6rhRoowtb-XO2itMAXoAXIzXv-WPCztMrkP3UAF-IisozjKdhKrzRiXJOr1a2SZmC6WRWUNy3uBBWaLgKweCbE~V1tLL7cE~jiu2B37w1gMl4SoJG1mX~faB-fcovkv7Chwo5wI4joyTwq7qUWLRtY~6gvtgWXTiEAQ3-ZOHlwcGox3Gg__);
+            background-size: cover;
+            background-position: center; /* or other position */
+            /* Inside auto layout */
+            background-repeat: no-repeat;
+
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 1;
+
+            .number{
+                /* 01 */
+
+                width: 449.04px;
+                height: 38px;
+
+                /* Ja/24px-Medium */
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 160%;
+                /* or 38px */
+                text-align: center;
+                letter-spacing: 0.3em;
+
+                color: #FFFFFF;
+
+
+                /* Inside auto layout */
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+
+            }
+            .title{
+                /* 保有総トン数三河No.1 */
+
+                width: 449.04px;
+                height: 104px;
+
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 52px;
+                /* or 162% */
+                text-align: center;
+                letter-spacing: 0.3em;
+
+                color: #FFFFFF;
+
+
+                /* Inside auto layout */
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+
+            }
+            .description{
+                /* 大型重機を複数台取り扱い、日本でも今のところ十数台しかないような重機も保有。地域的にトップクラス数と種類を取り揃える。 */
+
+                width: 434px;
+                height: 60px;
+
+                /* Ja/20px-Regular */
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 150%;
+                /* or 30px */
+                text-align: center;
+                letter-spacing: 0.05em;
+
+                color: #FFFFFF;
+
+
+                /* Inside auto layout */
+                flex: none;
+                order: 2;
+                flex-grow: 0;
+
+            }
+        }
+        .rectangle5{
+             /* Rectangle
+
+            Image Block
+            */
+
+            /* Auto layout */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 40px;
+
+            width: 640px;
+            height: 600px;
+
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-alpha-sig.figma.com/img/ebac/526e/044cb65dd089cf0863aeb45d88915340?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Qz9j9G6FKPLOf6f4p~r5vM7iHYDe3A5vsIrYgGboT93CznTr9ySXhzZMeDjY6~xzUWXU5YnS5ClkHEeAp12gbus3L8dpqL5W4mS0gZF4M2z4rmtE~S~WtoTDQZm3AF0bOEZa~Y3HoiTlCy6r8FnY94QrH2sjH1HS7S~OzrVp-Ki6MlA1ICef5gu0tzFp-0DypDFyj49yc9pkdZkoDIZoA-nepOp9BYs~YrXtq6XAgh95boSo3UoLB8BpSnxrKpeETT7IcoPJaflmFh6VdBz~wd7UjppiDRh6iCJ-LdXPMameNlltgGeCWA0EBwJPRDzvZ-CCCVB0CGvc6e7mJVW4UA__);
+            background-size: cover;
+            background-position: center; /* or other position */
+            /* Inside auto layout */
+            background-repeat: no-repeat;
+
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 1;
+
+            .number{
+                /* 01 */
+
+                width: 449.04px;
+                height: 38px;
+
+                /* Ja/24px-Medium */
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 160%;
+                /* or 38px */
+                text-align: center;
+                letter-spacing: 0.3em;
+
+                color: #FFFFFF;
+
+
+                /* Inside auto layout */
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+
+            }
+            .title{
+                /* 保有総トン数三河No.1 */
+
+                width: 449.04px;
+                height: 104px;
+
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 52px;
+                /* or 162% */
+                text-align: center;
+                letter-spacing: 0.3em;
+
+                color: #FFFFFF;
+
+
+                /* Inside auto layout */
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+
+            }
+            .description{
+                /* 大型重機を複数台取り扱い、日本でも今のところ十数台しかないような重機も保有。地域的にトップクラス数と種類を取り揃える。 */
+
+                width: 434px;
+                height: 60px;
+
+                /* Ja/20px-Regular */
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 150%;
+                /* or 30px */
+                text-align: center;
+                letter-spacing: 0.05em;
+
+                color: #FFFFFF;
+
+
+                /* Inside auto layout */
+                flex: none;
+                order: 2;
+                flex-grow: 0;
+
+            }
+        }
+
+    }
+
+}
+
+//BodyE
+.bodyE{
+    /* Body E */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    // padding: 200px 0px;
+    gap: 120px;
+    isolation: isolate;
+
+    width: 1920px;
+    height: 840px;
+
+    background: #DCE1E6;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 2;
+
+    .rectangle6{
+        /* Rectangle 4 */
+
+        position: absolute;
+        width: 280px;
+        height: 840px;
+
+        left: calc(50% - 280px/2);
+        // top: 0px;
+        // bottom: 0px;
+
+        background: #6A45FF;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        z-index: 0;
+
+        .rectangle7{
+            /* Rectangle
+
+            Image Block
+            */
+
+            width: 750px;
+            height: 440px;
+
+            background: url(https://s3-alpha-sig.figma.com/img/cb32/eb69/29dc45e5c648ff07000ce1feedef6ad2?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ixN0kJMHrGx48~4hSlRBodadAwzCCJ--pJ4PFMny2gbjtqoZEgfLLeeHCdtlNVWbJAYBvglYqos~be~wniMo5iIUjA-8KDly5v17ceqoCW4ty7jDPuVWCry-s6ro0sVSWbwHTTclnBs53WW0p~vSk4bBzte63IVOOVN9t3e4m4xRqiWasdUORKIWXId86tvMW7ErYlNPAxHiLMcurMzWT6LEGjZQguXHySF~sOUyrwm1f-CMRVWkhCB-vhjnLquGdPbkgl-~BQI3gal10crBRQGDB2h21c~baFy6CUKGQspkhmPckHf3c242gS~uZyGpt8zA7tMgsyM4pyMqLU4s9g__);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            position: absolute;
+            right: 50px;
+            top: 230px;
+
+            /* Inside auto layout */
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            z-index: 1;
+
+        }
+
+    }
+
+    .frame23{
+        /* Frame 23 */
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 64px;
+
+        width: 440px;
+        height: 319px;
+
+        position: absolute;
+        right: 300px;
+        
+        padding-top: 100px;
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+        z-index: 2;
+
+        .frame21{
+            /* Frame 21 */
+
+            /* Auto layout */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 32px;
+
+            width: 440px;
+            height: 203px;
+
+
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+
+            .frame20{
+                /* Frame 20 */
+
+                box-sizing: border-box;
+
+                /* Auto layout */
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 40px;
+
+                width: 440px;
+                height: 51px;
+
+                border-bottom: 8px solid #6A45FF;
+
+                /* Inside auto layout */
+                flex: none;
+                order: 0;
+                align-self: stretch;
+                flex-grow: 0;
+
+                span{
+                    /* サービス内容 */
+
+                    width: 311px;
+                    height: 51px;
+
+                    /* Ja/32px-Medium */
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 160%;
+                    /* or 51px */
+                    letter-spacing: 0.3em;
+
+                    color: #000000;
+
+
+                    /* Inside auto layout */
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+
+                }
+
+            }
+
+            span{
+                /* トップクラスのクレーンを手配・運搬・作業まで一貫して行います。トップクラスのクレーンを手配・運搬・作業まで一貫して行います。トップクラスのクレーンを手配・運搬・作業まで一貫して行います。 */
+
+                width: 440px;
+                height: 120px;
+                text-align: left;
+
+                /* Ja/16px-Regular */
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                /* or 24px */
+                letter-spacing: 0.05em;
+
+                color: rgba(0, 0, 0, 0.8);
+
+
+                /* Inside auto layout */
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+
+            }
+
+        }
+
+        .frame19{
+            /* Frame 19 */
+
+            /* Auto layout */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 16px;
+
+            width: 219px;
+            height: 52px;
+
+
+            /* Inside auto layout */
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+
+            span{
+                /* 詳しくはこちら */
+
+                width: 151px;
+                height: 26px;
+
+                /* Ja/16px-Medium */
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 160%;
+                /* identical to box height, or 26px */
+                text-align: center;
+                letter-spacing: 0.3em;
+
+                color: #000000;
+
+
+                /* Inside auto layout */
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+
+            }
+
+            .arrow{
+                /* solar:arrow-up-linear */
+
+                width: 52px;
+                height: 52px;
+
+                transform: rotate(0deg);
+
+                /* Inside auto layout */
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+
+                .vector{
+                    /* Vector */
+
+                    position: absolute;
+                    left: 69.23%;
+                    right: 0%;
+                    top: 34.62%;
+                    bottom: 26.92%;
+
+                    // border: 1.5px solid #6A45FF;
+                    // transform: rotate(90deg);
+
+                }
+                .eclipse{
+                    /* Ellipse 1 */
+
+                    // box-sizing: border-box;
+
+                    position: absolute;
+                    left: 0%;
+                    right: 0%;
+                    top: 0%;
+                    bottom: 0%;
+
+                    // border: 1.5px solid #6A45FF;
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+//BodyF
+.bodyF{
+    /* Body E */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0px;
+    gap: 120px;
+
+    width: 1920px;
+    height: 550px;
+
+    background: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 3;
+
+    .group{
+        /* Group 3547 */
+
+        width: 150px;
+        height: 150px;
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+
+        div{
+            width: 0px;
+            height: 0px;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            
+        }
+          
+        .red{
+            
+            border-top: 100px solid 
+            rgba(255, 82, 82, 1);
+            
+            
+        }
+          
+        .blue{
+            
+            border-top: 100px solid rgba(101, 135, 255, 1);
+            -webkit-transform: rotate(180deg);
+        }
+          
+        .green{
+            
+            border-top: 100px solid rgba(139, 255, 84, 1);
+            -webkit-transform: rotate(270deg);
+            position: absolute;
+            right: 830px;
+            top:3544px;
+        }
+          
+        .yellow{
+            
+            border-top: 100px solid rgba(233, 255, 96, 1);
+            -webkit-transform: rotate(90deg);
+            position: absolute;
+            top:3544px;
+            left: 935px;
+        }
+        
+
+    }
+
+}
+
+//Footer
+.footer{
+    /* Footer C */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0px;
+    gap: 56px;
+
+    width: 1920px;
+    height: 392px;
+
+    background: #5D6273;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 4;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 4;
+
+    .frame24{
+        /* Frame 24 */
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 96px;
+
+        width: 406px;
+        height: 26px;
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+
+        span{
+            /* ホーム */
+
+            width: 62px;
+            height: 26px;
+
+            /* Ja/16px-Medium */
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 160%;
+            /* identical to box height, or 26px */
+            letter-spacing: 0.3em;
+
+            color: #FFFFFF;
+
+
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+
+        }
+
+    }
+
+    .media{
+        /* Frame 3604 */
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        gap: 24px;
+        border-top: 4px solid #FFFFFF;
+
+        width: 1280px;
+        height: 100px;
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+
+    }
+
+    span{
+        /* © TAIKO JUKI, Inc. */
+
+        width: 75px;
+        height: 18px;
+
+        /* Ja/12px-Regular */
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        /* identical to box height, or 18px */
+        text-align: center;
+        letter-spacing: 0.05em;
+
+        color: rgba(255, 255, 255, 0.8);
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+
+    }
+
+}
 
 // Responsive Styles
 
@@ -233,8 +1163,8 @@ border: 1px solid #000000;
         position: absolute;
         width: 375px;
         height: 812px;
-        left: 5881px;
-        top: 587px;
+        // left: 5881px;
+        // top: 587px;
         overflow-y: scroll;
         background: #FFFFFF;
 
@@ -412,6 +1342,481 @@ border: 1px solid #000000;
             flex-grow: 0;
 
         }
+    }
+
+    .bodyG{
+        /* Body L */
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+        gap: 64px;
+        isolation: isolate;
+
+        width: 375px;
+        height: 1118px;
+
+        background: #FFFFFF;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+
+        .rectangle2{
+            /* Rectangle 4 */
+
+            position: absolute;
+            width: 40px;
+            height: 1118px;
+            left: calc(50% - 40px/2 + 0.5px);
+            // top: 0px;
+            // bottom: 0px;
+
+            background: rgba(106, 69, 255, 0.24);
+
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            z-index: 0;
+
+            .frame16{
+                /* Frame 18 */
+
+                /* Auto layout */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0px;
+                padding-top: 40px;
+                gap: 8px;
+                color: #000000;
+
+                width: 117px;
+                height: 78px;
+
+
+                /* Inside auto layout */
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+                z-index: 1;
+
+                p{
+                    font-size: 22px;
+                }
+        
+                span{
+                    font-size: 18px;
+                }
+
+
+            }
+
+            
+
+        }
+
+        .frame17{
+            /* Frame 3599 */
+
+            /* Auto layout */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 32px;
+            // padding-bottom: 100px;
+            gap: 24px;
+
+            width: 375px;
+            height: 816px;
+
+
+            /* Inside auto layout */
+            flex: none;
+            order: 2;
+            align-self: stretch;
+            flex-grow: 0;
+            z-index: 2;
+
+            .rectangle3{
+                /* Rectangle
+
+                Image Block
+                */
+
+                /* Auto layout */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 40px 32px;
+                gap: 24px;
+
+                width: 311px;
+                height: 256px;
+
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-alpha-sig.figma.com/img/40f8/c545/7746a488a1416d22e0b8b405b3300bf2?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bL3DJOB3p3uWeTssl3vN3zqvweoJ6YudR1-u-0mW82LOsmKPpwT72MyywUCkIm1JCBuo9DR3hm546E2yev3~~Zuu31j-UKiTT1Jh9CjXJPzmcTnMUGFWt~uT-~VDAjOmDWKz3bexil70mc5oxFj9IHVmh20ALjp0l6jT9SknOER-JMT84NMlVFZOHTFN6YYFgKZ9oKsVhv9wvd6cetAtsBZMgmrnPzDYHwr55JlOoy4AIgYslcv6WVM~0tOsf1OLB3QkvRqDA-GGR1k7DYrLzTU1XDCkvWhdMTCmxwwGnwx1CcxxtRqnllaY4qzD2eACAmJjylpQvSQKP9FNoX1Uxw__);
+                background-size: cover;
+                background-position: center; /* or other position */
+                /* Inside auto layout */
+                background-repeat: no-repeat;
+
+                /* Inside auto layout */
+                flex: none;
+                order: 0;
+                align-self: stretch;
+                flex-grow: 0;
+
+                .title{
+                   /* 保有総トン数 三河No.1 */
+
+                    width: 247px;
+                    height: 64px;
+
+                    /* Ja/20px-Medium */
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 160%;
+                    /* or 32px */
+                    text-align: center;
+                    letter-spacing: 0.3em;
+
+                    color: #FFFFFF;
+
+
+                    /* Inside auto layout */
+                    flex: none;
+                    order: 0;
+                    align-self: stretch;
+                    flex-grow: 0;
+
+    
+                }
+                .description{
+                    /* 大型重機を複数台取り扱い、日本でも今のところ十数台しかないような重機も保有。地域的にトップクラス数と種類を取り揃える。 */
+
+                    width: 247px;
+                    height: 42px;
+
+                    /* Ja/14px-Regular */
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    /* or 21px */
+                    text-align: center;
+                    letter-spacing: 0.05em;
+
+                    color: #FFFFFF;
+
+
+                    /* Inside auto layout */
+                    flex: none;
+                    order: 1;
+                    align-self: stretch;
+                    flex-grow: 0;
+
+    
+                }
+
+            }
+            .rectangle4{
+                 /* Rectangle
+
+                Image Block
+                */
+
+                /* Auto layout */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 40px 32px;
+                gap: 24px;
+
+                width: 311px;
+                height: 256px;
+
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-alpha-sig.figma.com/img/40c0/f50b/46b2300f00a14d64a977ec879165fcc1?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jxaOjfpfv1~d3nArtq0EsT~07kEI7eZVrmFXaksMPNnKD1qy-YXeXlyWclxuc9fUAgyIhDlXLT~JEURY3UxmJE8t1rGY6HNMbSozN2aOvEHOfxUkBApTnZYXKJsYgs-YrdX4DhC8fI6rxso~JnvIJsaoBVTsStSfd9mAR6rhRoowtb-XO2itMAXoAXIzXv-WPCztMrkP3UAF-IisozjKdhKrzRiXJOr1a2SZmC6WRWUNy3uBBWaLgKweCbE~V1tLL7cE~jiu2B37w1gMl4SoJG1mX~faB-fcovkv7Chwo5wI4joyTwq7qUWLRtY~6gvtgWXTiEAQ3-ZOHlwcGox3Gg__);
+                background-size: cover;
+                background-position: center; /* or other position */
+                /* Inside auto layout */
+                background-repeat: no-repeat;
+
+                /* Inside auto layout */
+                flex: none;
+                order: 0;
+                align-self: stretch;
+                flex-grow: 0;
+
+                .title{
+                   /* 保有総トン数 三河No.1 */
+
+                    width: 247px;
+                    height: 64px;
+
+                    /* Ja/20px-Medium */
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 160%;
+                    /* or 32px */
+                    text-align: center;
+                    letter-spacing: 0.3em;
+
+                    color: #FFFFFF;
+
+
+                    /* Inside auto layout */
+                    flex: none;
+                    order: 0;
+                    align-self: stretch;
+                    flex-grow: 0;
+
+    
+                }
+                .description{
+                    /* 大型重機を複数台取り扱い、日本でも今のところ十数台しかないような重機も保有。地域的にトップクラス数と種類を取り揃える。 */
+
+                    width: 247px;
+                    height: 42px;
+
+                    /* Ja/14px-Regular */
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    /* or 21px */
+                    text-align: center;
+                    letter-spacing: 0.05em;
+
+                    color: #FFFFFF;
+
+
+                    /* Inside auto layout */
+                    flex: none;
+                    order: 1;
+                    align-self: stretch;
+                    flex-grow: 0;
+
+    
+                }
+
+            }
+            .rectangle5{
+                 /* Rectangle
+
+                Image Block
+                */
+
+                /* Auto layout */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 40px 32px;
+                gap: 24px;
+
+                width: 311px;
+                height: 256px;
+
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-alpha-sig.figma.com/img/ebac/526e/044cb65dd089cf0863aeb45d88915340?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Qz9j9G6FKPLOf6f4p~r5vM7iHYDe3A5vsIrYgGboT93CznTr9ySXhzZMeDjY6~xzUWXU5YnS5ClkHEeAp12gbus3L8dpqL5W4mS0gZF4M2z4rmtE~S~WtoTDQZm3AF0bOEZa~Y3HoiTlCy6r8FnY94QrH2sjH1HS7S~OzrVp-Ki6MlA1ICef5gu0tzFp-0DypDFyj49yc9pkdZkoDIZoA-nepOp9BYs~YrXtq6XAgh95boSo3UoLB8BpSnxrKpeETT7IcoPJaflmFh6VdBz~wd7UjppiDRh6iCJ-LdXPMameNlltgGeCWA0EBwJPRDzvZ-CCCVB0CGvc6e7mJVW4UA__);
+                background-size: cover;
+                background-position: center; /* or other position */
+                /* Inside auto layout */
+                background-repeat: no-repeat;
+
+                /* Inside auto layout */
+                flex: none;
+                order: 0;
+                align-self: stretch;
+                flex-grow: 0;
+
+                .title{
+                   /* 保有総トン数 三河No.1 */
+
+                    width: 247px;
+                    height: 64px;
+
+                    /* Ja/20px-Medium */
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 160%;
+                    /* or 32px */
+                    text-align: center;
+                    letter-spacing: 0.3em;
+
+                    color: #FFFFFF;
+
+
+                    /* Inside auto layout */
+                    flex: none;
+                    order: 0;
+                    align-self: stretch;
+                    flex-grow: 0;
+
+    
+                }
+                .description{
+                    /* 大型重機を複数台取り扱い、日本でも今のところ十数台しかないような重機も保有。地域的にトップクラス数と種類を取り揃える。 */
+
+                    width: 247px;
+                    height: 42px;
+
+                    /* Ja/14px-Regular */
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    /* or 21px */
+                    text-align: center;
+                    letter-spacing: 0.05em;
+
+                    color: #FFFFFF;
+
+
+                    /* Inside auto layout */
+                    flex: none;
+                    order: 1;
+                    align-self: stretch;
+                    flex-grow: 0;
+
+    
+                }
+
+            }
+        }
+
+    }
+
+    .bodyE{
+        /* Body L */
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 0px;
+        gap: 64px;
+        isolation: isolate;
+
+        width: 375px;
+        height: 654px;
+
+        background: #DCE1E6;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+
+        .rectangle6{
+            /* Rectangle 4 */
+
+            position: absolute;
+            width: 40px;
+            left: calc(50% - 40px/2 + 0.5px);
+            // top: 0px;
+            // bottom: 0px;
+
+            background: rgba(106, 69, 255, 0.24);
+
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            z-index: 0;
+
+            .rectangle7{
+                /* Rectangle
+
+                Image Block
+                */
+
+                width: 311px;
+                height: 200px;
+
+                background: url(https://s3-alpha-sig.figma.com/img/cb32/eb69/29dc45e5c648ff07000ce1feedef6ad2?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ixN0kJMHrGx48~4hSlRBodadAwzCCJ--pJ4PFMny2gbjtqoZEgfLLeeHCdtlNVWbJAYBvglYqos~be~wniMo5iIUjA-8KDly5v17ceqoCW4ty7jDPuVWCry-s6ro0sVSWbwHTTclnBs53WW0p~vSk4bBzte63IVOOVN9t3e4m4xRqiWasdUORKIWXId86tvMW7ErYlNPAxHiLMcurMzWT6LEGjZQguXHySF~sOUyrwm1f-CMRVWkhCB-vhjnLquGdPbkgl-~BQI3gal10crBRQGDB2h21c~baFy6CUKGQspkhmPckHf3c242gS~uZyGpt8zA7tMgsyM4pyMqLU4s9g__);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                padding-left: 100px;
+
+                /* Inside auto layout */
+                flex: none;
+                order: 1;
+                align-self: stretch;
+                flex-grow: 0;
+
+            }
+
+        }
+
+        .frame20{
+            /* Frame 3602 */
+
+            box-sizing: border-box;
+
+            /* Auto layout */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px 16px;
+            gap: 40px;
+
+            width: 311px;
+            height: 32px;
+
+            border-bottom: 4px solid #6A45FF;
+
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            align-self: stretch;
+            flex-grow: 0;
+
+            span{
+                /* サービス内容 */
+
+                width: 194px;
+                height: 32px;
+
+                /* Ja/20px-Medium */
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 160%;
+                /* identical to box height, or 32px */
+                letter-spacing: 0.3em;
+
+                color: #000000;
+
+
+                /* Inside auto layout */
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+
+            }
+
+        }
+
     }
     
 }
