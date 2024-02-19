@@ -53,7 +53,7 @@
     /* Auto layout */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-evenly;
     align-items: center;
     // padding: 14px 80px;
     gap: 176px;
@@ -79,6 +79,7 @@
 
         width: 185px;
         height: 51px;
+        margin-left: 50px;
 
 
         /* Inside auto layout */
@@ -97,6 +98,7 @@
         align-items: center;
         padding: 0px;
         gap: 120px;
+        margin-left: 380px;
 
         // width: 454px;
         height: 26px;
@@ -109,17 +111,54 @@
         flex-grow: 0;
 
     }
-    .logo2{
-        /* Logo2 */
+    .sidebar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.479);
+        backdrop-filter: blur(20px);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
 
-        width: 0px;
-        height: 100px;
+    .logo4{
+      /* Group 3546 */
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 20px;
+        height: 20px;
 
 
         /* Inside auto layout */
         flex: none;
-        order: 2;
+        order: 1;
         flex-grow: 0;
+
+        .bar1{
+            height: 5px;
+            width: 20px;
+            background-color: rgba(106, 69, 255, 1);
+        }
+
+        .bar2{
+            height: 5px;
+            width: 20px;
+            background-color: rgba(106, 69, 255, 1);
+        }
+
+        .bar3{
+            height: 5px;
+            width: 20px;
+            background-color: rgba(106, 69, 255, 1);
+        }
 
     }
 
@@ -1015,8 +1054,8 @@
             border-top: 100px solid rgba(139, 255, 84, 1);
             -webkit-transform: rotate(270deg);
             position: absolute;
-            right: 830px;
-            top:3544px;
+            right: 885px;
+            top:3545px;
         }
           
         .yellow{
@@ -1166,23 +1205,46 @@
         // left: 5881px;
         // top: 587px;
         overflow-y: scroll;
+
         background: #FFFFFF;
+
+        /* Frame 3600 */
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+
+        position: absolute;
+        width: 375px;
+        height: 2996px;
+        left: 0px;
+        top: 0px;
+
+
 
     }
 
     .navigation{
+
+        .hideOnMobile{
+            display: none;
+        }
+
         /* Frame 3598 */
 
         /* Auto layout */
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        // justify-content: space-between;
         align-items: center;
-        padding: 10px 16px;
+        // padding: 10px 16px;
         gap: 10px;
 
         position: absolute;
         height: 48px;
+        width: 375px;
         left: 0px;
         right: 0px;
         top: 0px;
@@ -1192,25 +1254,22 @@
         backdrop-filter: blur(4px);
         /* Note: backdrop-filter has minimal browser support */
 
+
         .logo{
-            /* Logo */
-    
-            margin: 0 auto;
-            width: 124px;
-            height: 34.18px;
-    
-    
-            /* Inside auto layout */
-            flex: none;
-            order: 0;
-            flex-grow: 0;
-    
+            position: absolute;
+            left: -70px;
+            top: 8.91px;
+
+            .L1{
+                width: 124px;
+                height: 34.18px;
+            }
         }
 
         .frame{
             /* Group 3546 */
     
-            margin: 0 auto;
+            margin-top: 20px;
             width: 20px;
             height: 16px;
     
@@ -1219,7 +1278,18 @@
             flex: none;
             order: 1;
             flex-grow: 0;
+
+            .L3{
+                width: 66px;
+                height: 66px;
+            }
     
+        }
+
+        .logo4{
+            position: absolute;
+            right: 30px;
+            display: flex;
         }
 
     }
@@ -1239,62 +1309,70 @@
         height: 554px;
 
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 26.56%, rgba(0, 0, 0, 0.75) 71.35%), url(https://s3-alpha-sig.figma.com/img/f234/db39/c8d5557ec57e38235f6162d11fe4555b?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Fs6SrSWBQlmIppQVMbxEDowfUf6rWpq1j~jHKezvRl-kgXMUBUpd7CFc7KYWPwIir0aEvdVHc7mrzCs2ffgt4y4yImRUU~cRUBro1bmV3oWEg~L1ZFB9Tz2-U~gUa2d-JsNdOduUSryqolbmRgViaevOyqJQlEAhT1nmB8EDUtuB3d19pkQ7gNnytSyR90eFNET2s4xfr4bDg18K2f4D3sahyff7wVY6ysDshQQNfjtc2ZW~zPoxrYhcr-WPS3u4QB8hWwbLkM6fF5Kz66wybtR315a3uNlHm~P87IBeKAxgPg0Lf3OnnpmET-R43pvaA69C6vdD3TZ1naAPjZjfNA__);
-        background-size: cover; /* or contain, or specific size */
-        background-position: center; /* or other position */
-        /* Inside auto layout */
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
 
         /* Inside auto layout */
         flex: none;
         order: 0;
         flex-grow: 1;
 
+
         .logo2{
             /* Logo */
-    
-            // width: 263.64px;
-            // height: 69.75px;
-    
-            // position: absolute;
-            // top: 360px;
-    
-            // /* Inside auto layout */
-            // flex: none;
-            // order: 0;
-            // flex-grow: 0;
+
             width: 263.64px;
             height: 69.75px;
-            display: flex;
+
             position: absolute;
-            top: 250px;
-
-    
-        }
-        .rectangle{
-            /* Body L */
-
-            /* Auto layout */
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: center;
-            padding: 0px;
-            gap: 16px;
-            font-size: 28px;
-
-            width: 375px;
-            height: 159px;
-            background-color: inherit;
-            position: absolute;
-            top: 300px;
+            top: 180px;
 
 
             /* Inside auto layout */
             flex: none;
-            order: 2;
-            align-self: stretch;
+            order: 0;
             flex-grow: 0;
 
+            .L2{
+                width: 263.64px;
+                height: 69.75px;
+
+            }
+    
         }
+
+        .rectangle{
+            display: flex;
+            position: absolute;
+            top: 100px;
+            background-color: inherit;
+
+            span{
+                /* トップクラスの 大型重機エキスパート */
+
+                position: absolute;
+                left: 32px;
+                top: 190px;
+
+                /* Ja/20px-Medium */
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 160%;
+                width: 310px;
+                text-align: center;
+                letter-spacing: 0.3em;
+
+                color: #FFFFFF;
+
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+
+            }
+        }
+
         .bodyL{
              /* Body L */
 
@@ -1312,13 +1390,41 @@
             height: 159px;
 
             position: absolute;
-            top: 500px;
+            top: 280px;
+            left: 10px;
 
             /* Inside auto layout */
             flex: none;
             order: 2;
             align-self: stretch;
             flex-grow: 0;
+            
+        }
+        span{
+            /* 三河エリア随一の 総トン数1,800t超＜2023/7月＞を誇り、 多様なクレーンニーズにお応えします */
+
+            width: 298px;
+            height: 63px;
+
+            /* Ja/14px-Regular */
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            /* or 21px */
+            text-align: center;
+            letter-spacing: 0.05em;
+
+            color: rgba(255, 255, 255, 0.8);
+
+            text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.75);
+
+            /* Inside auto layout */
+            flex: none;
+            order: 2;
+            flex-grow: 0;
+
         }
 
         .frame25{
@@ -1345,14 +1451,14 @@
     }
 
     .bodyG{
-        /* Body L */
+       /* Body L */
 
         /* Auto layout */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0px 0px;
+        // padding: 80px 0px;
         gap: 64px;
         isolation: isolate;
 
@@ -1365,6 +1471,7 @@
         flex: none;
         order: 1;
         flex-grow: 0;
+
 
         .rectangle2{
             /* Rectangle 4 */
@@ -1384,20 +1491,23 @@
             flex-grow: 0;
             z-index: 0;
 
+
             .frame16{
-                /* Frame 18 */
+               /* Frame 18 */
 
                 /* Auto layout */
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 padding: 0px;
-                padding-top: 40px;
                 gap: 8px;
-                color: #000000;
 
                 width: 117px;
                 height: 78px;
+
+                position: absolute;
+                top: 70px;
+                left: -41px;
 
 
                 /* Inside auto layout */
@@ -1406,18 +1516,63 @@
                 flex-grow: 0;
                 z-index: 1;
 
+
                 p{
-                    font-size: 22px;
+                    /* Strength */
+
+                    width: 104px;
+                    height: 38px;
+                    margin: 0px;
+
+                    /* Ja/24px-Medium */
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 160%;
+                    /* or 38px */
+                    text-align: center;
+                    letter-spacing: 0.3em;
+
+                    color: #6A45FF;
+
+                    mix-blend-mode: normal;
+
+                    /* Inside auto layout */
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+
                 }
         
                 span{
-                    font-size: 18px;
+                    /* 大弘重機の強み */
+
+                    width: 195px;
+                    height: 32px;
+
+                    /* Ja/20px-Medium */
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 160%;
+                    /* identical to box height, or 32px */
+                    text-align: center;
+                    letter-spacing: 0.3em;
+
+                    color: #000000;
+
+
+                    /* Inside auto layout */
+                    flex: none;
+                    order: 1;
+                    flex-grow: 0;
+
                 }
 
 
             }
-
-            
 
         }
 
@@ -1428,8 +1583,8 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            padding: 32px;
-            // padding-bottom: 100px;
+            margin-top: 100px;
+            padding: 0px 32px;
             gap: 24px;
 
             width: 375px;
@@ -1443,8 +1598,10 @@
             flex-grow: 0;
             z-index: 2;
 
+
+
             .rectangle3{
-                /* Rectangle
+               /* Rectangle
 
                 Image Block
                 */
@@ -1454,16 +1611,16 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding: 40px 32px;
+                // padding: 40px 32px;
                 gap: 24px;
 
                 width: 311px;
                 height: 256px;
 
                 background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-alpha-sig.figma.com/img/40f8/c545/7746a488a1416d22e0b8b405b3300bf2?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bL3DJOB3p3uWeTssl3vN3zqvweoJ6YudR1-u-0mW82LOsmKPpwT72MyywUCkIm1JCBuo9DR3hm546E2yev3~~Zuu31j-UKiTT1Jh9CjXJPzmcTnMUGFWt~uT-~VDAjOmDWKz3bexil70mc5oxFj9IHVmh20ALjp0l6jT9SknOER-JMT84NMlVFZOHTFN6YYFgKZ9oKsVhv9wvd6cetAtsBZMgmrnPzDYHwr55JlOoy4AIgYslcv6WVM~0tOsf1OLB3QkvRqDA-GGR1k7DYrLzTU1XDCkvWhdMTCmxwwGnwx1CcxxtRqnllaY4qzD2eACAmJjylpQvSQKP9FNoX1Uxw__);
+
+                background-position: center;
                 background-size: cover;
-                background-position: center; /* or other position */
-                /* Inside auto layout */
                 background-repeat: no-repeat;
 
                 /* Inside auto layout */
@@ -1472,10 +1629,14 @@
                 align-self: stretch;
                 flex-grow: 0;
 
-                .title{
-                   /* 保有総トン数 三河No.1 */
+                .number{
+                    font-size: 16px;
+                }
 
-                    width: 247px;
+                .title{
+                    /* 保有総トン数 三河No.1 */
+
+                    width: 268px;
                     height: 64px;
 
                     /* Ja/20px-Medium */
@@ -1487,6 +1648,7 @@
                     /* or 32px */
                     text-align: center;
                     letter-spacing: 0.3em;
+                    padding-left: 25px;
 
                     color: #FFFFFF;
 
@@ -1497,8 +1659,8 @@
                     align-self: stretch;
                     flex-grow: 0;
 
-    
                 }
+
                 .description{
                     /* 大型重機を複数台取り扱い、日本でも今のところ十数台しかないような重機も保有。地域的にトップクラス数と種類を取り揃える。 */
 
@@ -1514,6 +1676,7 @@
                     /* or 21px */
                     text-align: center;
                     letter-spacing: 0.05em;
+                    padding-left: 25px;
 
                     color: #FFFFFF;
 
@@ -1529,7 +1692,7 @@
 
             }
             .rectangle4{
-                 /* Rectangle
+                  /* Rectangle
 
                 Image Block
                 */
@@ -1539,16 +1702,16 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding: 40px 32px;
+                // padding: 40px 32px;
                 gap: 24px;
 
                 width: 311px;
                 height: 256px;
 
                 background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-alpha-sig.figma.com/img/40c0/f50b/46b2300f00a14d64a977ec879165fcc1?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jxaOjfpfv1~d3nArtq0EsT~07kEI7eZVrmFXaksMPNnKD1qy-YXeXlyWclxuc9fUAgyIhDlXLT~JEURY3UxmJE8t1rGY6HNMbSozN2aOvEHOfxUkBApTnZYXKJsYgs-YrdX4DhC8fI6rxso~JnvIJsaoBVTsStSfd9mAR6rhRoowtb-XO2itMAXoAXIzXv-WPCztMrkP3UAF-IisozjKdhKrzRiXJOr1a2SZmC6WRWUNy3uBBWaLgKweCbE~V1tLL7cE~jiu2B37w1gMl4SoJG1mX~faB-fcovkv7Chwo5wI4joyTwq7qUWLRtY~6gvtgWXTiEAQ3-ZOHlwcGox3Gg__);
+
+                background-position: center;
                 background-size: cover;
-                background-position: center; /* or other position */
-                /* Inside auto layout */
                 background-repeat: no-repeat;
 
                 /* Inside auto layout */
@@ -1557,10 +1720,14 @@
                 align-self: stretch;
                 flex-grow: 0;
 
-                .title{
-                   /* 保有総トン数 三河No.1 */
+                .number{
+                    font-size: 16px;
+                }
 
-                    width: 247px;
+                .title{
+                    /* 保有総トン数 三河No.1 */
+
+                    width: 268px;
                     height: 64px;
 
                     /* Ja/20px-Medium */
@@ -1572,6 +1739,7 @@
                     /* or 32px */
                     text-align: center;
                     letter-spacing: 0.3em;
+                    padding-left: 25px;
 
                     color: #FFFFFF;
 
@@ -1582,8 +1750,8 @@
                     align-self: stretch;
                     flex-grow: 0;
 
-    
                 }
+
                 .description{
                     /* 大型重機を複数台取り扱い、日本でも今のところ十数台しかないような重機も保有。地域的にトップクラス数と種類を取り揃える。 */
 
@@ -1599,6 +1767,7 @@
                     /* or 21px */
                     text-align: center;
                     letter-spacing: 0.05em;
+                    padding-left: 25px;
 
                     color: #FFFFFF;
 
@@ -1612,7 +1781,9 @@
     
                 }
 
+
             }
+
             .rectangle5{
                  /* Rectangle
 
@@ -1624,16 +1795,16 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding: 40px 32px;
+                // padding: 40px 32px;
                 gap: 24px;
 
                 width: 311px;
                 height: 256px;
 
                 background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-alpha-sig.figma.com/img/ebac/526e/044cb65dd089cf0863aeb45d88915340?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Qz9j9G6FKPLOf6f4p~r5vM7iHYDe3A5vsIrYgGboT93CznTr9ySXhzZMeDjY6~xzUWXU5YnS5ClkHEeAp12gbus3L8dpqL5W4mS0gZF4M2z4rmtE~S~WtoTDQZm3AF0bOEZa~Y3HoiTlCy6r8FnY94QrH2sjH1HS7S~OzrVp-Ki6MlA1ICef5gu0tzFp-0DypDFyj49yc9pkdZkoDIZoA-nepOp9BYs~YrXtq6XAgh95boSo3UoLB8BpSnxrKpeETT7IcoPJaflmFh6VdBz~wd7UjppiDRh6iCJ-LdXPMameNlltgGeCWA0EBwJPRDzvZ-CCCVB0CGvc6e7mJVW4UA__);
+
+                background-position: center;
                 background-size: cover;
-                background-position: center; /* or other position */
-                /* Inside auto layout */
                 background-repeat: no-repeat;
 
                 /* Inside auto layout */
@@ -1642,10 +1813,14 @@
                 align-self: stretch;
                 flex-grow: 0;
 
-                .title{
-                   /* 保有総トン数 三河No.1 */
+                .number{
+                    font-size: 16px;
+                }
 
-                    width: 247px;
+                .title{
+                    /* 保有総トン数 三河No.1 */
+
+                    width: 268px;
                     height: 64px;
 
                     /* Ja/20px-Medium */
@@ -1657,6 +1832,7 @@
                     /* or 32px */
                     text-align: center;
                     letter-spacing: 0.3em;
+                    padding-left: 25px;
 
                     color: #FFFFFF;
 
@@ -1667,8 +1843,8 @@
                     align-self: stretch;
                     flex-grow: 0;
 
-    
                 }
+
                 .description{
                     /* 大型重機を複数台取り扱い、日本でも今のところ十数台しかないような重機も保有。地域的にトップクラス数と種類を取り揃える。 */
 
@@ -1684,6 +1860,7 @@
                     /* or 21px */
                     text-align: center;
                     letter-spacing: 0.05em;
+                    padding-left: 25px;
 
                     color: #FFFFFF;
 
@@ -1696,6 +1873,7 @@
 
     
                 }
+
 
             }
         }
@@ -1710,7 +1888,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 80px 0px;
+        // padding: 80px 0px;
         gap: 64px;
         isolation: isolate;
 
@@ -1724,11 +1902,13 @@
         order: 2;
         flex-grow: 0;
 
+
         .rectangle6{
-            /* Rectangle 4 */
+           /* Rectangle 4 */
 
             position: absolute;
             width: 40px;
+            height: 654px;
             left: calc(50% - 40px/2 + 0.5px);
             // top: 0px;
             // bottom: 0px;
@@ -1741,6 +1921,7 @@
             flex-grow: 0;
             z-index: 0;
 
+
             .rectangle7{
                 /* Rectangle
 
@@ -1750,12 +1931,15 @@
                 width: 311px;
                 height: 200px;
 
-                background: url(https://s3-alpha-sig.figma.com/img/cb32/eb69/29dc45e5c648ff07000ce1feedef6ad2?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ixN0kJMHrGx48~4hSlRBodadAwzCCJ--pJ4PFMny2gbjtqoZEgfLLeeHCdtlNVWbJAYBvglYqos~be~wniMo5iIUjA-8KDly5v17ceqoCW4ty7jDPuVWCry-s6ro0sVSWbwHTTclnBs53WW0p~vSk4bBzte63IVOOVN9t3e4m4xRqiWasdUORKIWXId86tvMW7ErYlNPAxHiLMcurMzWT6LEGjZQguXHySF~sOUyrwm1f-CMRVWkhCB-vhjnLquGdPbkgl-~BQI3gal10crBRQGDB2h21c~baFy6CUKGQspkhmPckHf3c242gS~uZyGpt8zA7tMgsyM4pyMqLU4s9g__);
+                background: url(https://s3-alpha-sig.figma.com/img/cb32/eb69/29dc45e5c648ff07000ce1feedef6ad2?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=R-9AuohysEzn-51yvw5Qmn-0pQT7Ug2VBp9gpQ59yFxOadFFvb5Z8ZSqCWjOqu8JOVoXDZpmOuqK13f1JuyJwsglVr7YbSTQvUH2FI2vwKOJ-XX~mAXY6mUdz7xxECVQVkFM~a4nA6YqNeXyYrUR94m95FghECucMJBhy1ZOHleafcahVfIsqqj~4abSrb0w8lt6qcRXssMp3dyepLEAX5H0ewp2W3RKNcVmb0uH5OVgXRIZTNVAPNYyP9OrTtEsDXwttcO-A0Yo3uoBSTUsIBDRKZbyIzgBO0Ue61got16y2rpUg7BqOHjoj3NYguKOGJ0RtcZcA9Iej7TPRKtoZQ__);
+
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
 
-                padding-left: 100px;
+                position: absolute;
+                left: -167px;
+                top: 150px;
 
                 /* Inside auto layout */
                 flex: none;
@@ -1763,35 +1947,53 @@
                 align-self: stretch;
                 flex-grow: 0;
 
+
             }
 
         }
 
         .frame20{
-            /* Frame 3602 */
+          /* Frame 3602 */
 
-            box-sizing: border-box;
+            // box-sizing: border-box;
 
             /* Auto layout */
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 0px 16px;
-            gap: 40px;
+            // display: flex;
+            // flex-direction: column;
+            // align-items: flex-start;
+            // padding: 0px 16px;
+            // gap: 40px;
+
+            // width: 300px;
+            // height: 32px;
+
+            // position: absolute;
+            // left: 400px;
+
+            // border-bottom: 4px solid #6A45FF;
+
+            /* Inside auto layout */
+            // flex: none;
+            // order: 0;
+            // align-self: stretch;
+            // flex-grow: 0;
 
             width: 311px;
             height: 32px;
 
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
             border-bottom: 4px solid #6A45FF;
 
-            /* Inside auto layout */
-            flex: none;
-            order: 0;
-            align-self: stretch;
-            flex-grow: 0;
+            position: absolute;
+            left: 366px;
+            top: -30px;
+
 
             span{
-                /* サービス内容 */
+               /* サービス内容 */
 
                 width: 194px;
                 height: 32px;
@@ -1811,6 +2013,300 @@
                 /* Inside auto layout */
                 flex: none;
                 order: 0;
+                flex-grow: 0;
+
+
+            }
+
+        }
+
+        .frd{
+
+            position: absolute;
+            bottom: 0px;
+            left: 390px;
+            width: 300px;
+            text-align: left;
+
+
+            span{
+                /* トップクラスのクレーンを手配・運搬・作業まで一貫して行います。トップクラスのクレーンを手配・運搬・作業まで一貫して行います。トップクラスのクレーンを手配・運搬・作業まで一貫して行います。 */
+    
+                width: 295px;
+                height: 126px;
+    
+                /* Ja/14px-Regular */
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                /* or 21px */
+                text-align: justify;
+                letter-spacing: 0.05em;
+    
+                color: rgba(0, 0, 0, 0.8);
+
+                /* Inside auto layout */
+                flex: none;
+                order: 0;
+                flex-grow: 1;
+    
+            }
+        }
+
+        .frame19{
+            /* Frame 23 */
+
+            /* Auto layout */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            // padding: 0px 16px;
+            gap: 16px;
+
+            width: 311px;
+            height: 40px;
+
+            position: absolute;
+            left: 375px;
+            bottom: -90px;
+
+
+            /* Inside auto layout */
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 0;
+
+            span{
+                /* Frame 23 */
+
+                /* Auto layout */
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px 16px;
+                gap: 16px;
+
+                width: 311px;
+                height: 40px;
+
+
+                /* Inside auto layout */
+                flex: none;
+                order: 1;
+                align-self: stretch;
+                flex-grow: 0;
+
+            }
+            .arrow{
+                position: absolute;
+                left: 170px;
+                bottom: 10px;
+                .eclipse{
+                    .L3{
+                        width: 40;
+                        height: 40;
+                    }
+                }
+            }
+
+        }
+
+       
+
+    }
+
+    .bodyF{
+        /* Body L */
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // padding: 80px 0px;
+        gap: 64px;
+
+        width: 375px;
+        height: 260px;
+
+        background: #FFFFFF;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 3;
+        flex-grow: 0;
+
+        .group{
+            /* Group 3547 */
+
+            width: 100px;
+            height: 100px;
+
+
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+
+            div{
+                width: 0px;
+                height: 0px;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                
+            }
+              
+            .red{
+                
+                border-top: 50px solid 
+                rgba(255, 82, 82, 1);
+                
+                
+            }
+              
+            .blue{
+                
+                border-top: 50px solid rgba(101, 135, 255, 1);
+                -webkit-transform: rotate(180deg);
+            }
+              
+            .green{
+                
+                border-top: 50px solid rgba(139, 255, 84, 1);
+                -webkit-transform: rotate(270deg);
+                position: absolute;
+                left: 113px;
+                bottom: 0px;
+                top: 2631px;
+                right: 0px;
+                
+            }
+              
+            .yellow{
+                
+                border-top: 50px solid rgba(233, 255, 96, 1);
+                -webkit-transform: rotate(90deg);
+                position: absolute;
+                top: 2631px;
+                left: 162px;
+                
+            }
+
+        }
+
+    }
+
+    .footer{
+        /* Footer C */
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 64px 0px;
+        gap: 40px;
+
+        width: 375px;
+        height: 410px;
+
+        background: #5D6273;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 4;
+        flex-grow: 0;
+
+        .frame24{
+            /* Frame 3605 */
+
+            /* Auto layout */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            gap: 24px;
+
+            width: 76px;
+            height: 126px;
+
+
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+
+            span{
+                /* Home */
+
+                width: 62px;
+                height: 26px;
+
+                /* Ja/16px-Medium */
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 160%;
+                /* identical to box height, or 26px */
+                letter-spacing: 0.3em;
+
+                color: #FFFFFF;
+
+
+                /* Inside auto layout */
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+
+
+            }
+
+        }
+
+        .media{
+            /* Frame 3606 */
+
+            /* Auto layout */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 16px;
+
+            width: 300px;
+            height: 88px;
+
+
+            /* Inside auto layout */
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+
+            span{
+                /* © TAIKO JUKI, Inc. */
+
+                width: 75px;
+                height: 18px;
+
+                /* Ja/12px-Regular */
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 150%;
+                /* identical to box height, or 18px */
+                text-align: center;
+                letter-spacing: 0.05em;
+
+                color: rgba(255, 255, 255, 0.8);
+
+
+                /* Inside auto layout */
+                flex: none;
+                order: 2;
                 flex-grow: 0;
 
             }
