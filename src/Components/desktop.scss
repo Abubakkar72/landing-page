@@ -1,28 +1,5 @@
-
 //Desktop
 .des{
-    /* Desktop */
-
-// box-sizing: border-box;
-
-/* Auto layout */
-// display: flex;
-// flex-direction: column;
-// align-items: flex-start;
-// padding: 0px;
-// isolation: isolate;
-
-// position: absolute;
-// width: 1920px;
-// height: 1080px;
-// left: 3538px;
-// top: 587px;
-// overflow: scroll;
-// overflow-y: scroll;
-// overflow-x: hidden;
-// background: #FFFFFF;
-// border: 1px solid #000000;
-
     /* Desktop */
 
     box-sizing: border-box;
@@ -179,8 +156,7 @@
 
     width: 1920px;
     height: 1080px;
-
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 26.56%, rgba(0, 0, 0, 0.75) 71.35%), url(https://s3-alpha-sig.figma.com/img/f234/db39/c8d5557ec57e38235f6162d11fe4555b?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Fs6SrSWBQlmIppQVMbxEDowfUf6rWpq1j~jHKezvRl-kgXMUBUpd7CFc7KYWPwIir0aEvdVHc7mrzCs2ffgt4y4yImRUU~cRUBro1bmV3oWEg~L1ZFB9Tz2-U~gUa2d-JsNdOduUSryqolbmRgViaevOyqJQlEAhT1nmB8EDUtuB3d19pkQ7gNnytSyR90eFNET2s4xfr4bDg18K2f4D3sahyff7wVY6ysDshQQNfjtc2ZW~zPoxrYhcr-WPS3u4QB8hWwbLkM6fF5Kz66wybtR315a3uNlHm~P87IBeKAxgPg0Lf3OnnpmET-R43pvaA69C6vdD3TZ1naAPjZjfNA__);
+    transition: background-image 1s ease-in-out;
     background-size: cover; /* or contain, or specific size */
     background-position: center; /* or other position */
     /* Inside auto layout */
@@ -1015,11 +991,30 @@
     flex-grow: 0;
     z-index: 3;
 
+    @keyframes rotateAndScale {
+        0% {
+          transform: rotate(0deg) scale(1);
+        }
+        50% {
+          transform: rotate(360deg) scale(1.5);
+        }
+        100% {
+          transform: rotate(720deg) scale(1);
+        }
+      }
+
     .group{
         /* Group 3547 */
 
         width: 150px;
         height: 150px;
+
+        position: relative;
+        overflow: hidden;
+        // clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+        animation: rotateAndScale 4s infinite;
+        animation-timing-function: ease-in-out;
 
 
         /* Inside auto layout */
@@ -1027,47 +1022,34 @@
         order: 0;
         flex-grow: 0;
 
-        div{
-            width: 0px;
-            height: 0px;
-            border-left: 100px solid transparent;
-            border-right: 100px solid transparent;
-            
-        }
-          
-        .red{
-            
-            border-top: 100px solid 
-            rgba(255, 82, 82, 1);
-            
-            
-        }
-          
-        .blue{
-            
-            border-top: 100px solid rgba(101, 135, 255, 1);
-            -webkit-transform: rotate(180deg);
-        }
-          
-        .green{
-            
-            border-top: 100px solid rgba(139, 255, 84, 1);
-            -webkit-transform: rotate(270deg);
+        .triangle {
             position: absolute;
-            right: 885px;
-            top:3545px;
+            width: 100%;
+            height: 100%;
+            clip-path: polygon(0% 0%, 50% 50%, 0% 100%);
         }
-          
-        .yellow{
-            
-            border-top: 100px solid rgba(233, 255, 96, 1);
-            -webkit-transform: rotate(90deg);
-            position: absolute;
-            top:3544px;
-            left: 935px;
-        }
-        
 
+        .triangle:nth-child(2) {
+            transform: rotate(90deg); /* Rotate second triangle */
+        }
+        .triangle:nth-child(3) {
+            transform: rotate(180deg); /* Rotate third triangle */
+        }
+        .triangle:nth-child(4) {
+            transform: rotate(-90deg); /* Rotate fourth triangle */
+        }
+        .triangle:nth-child(1) {
+            background-color: rgba(255, 82, 82, 1); /* Adjust color of first triangle */
+        }
+        .triangle:nth-child(2) {
+            background-color: rgba(233, 255, 96, 1); /* Adjust color of second triangle */
+        }
+        .triangle:nth-child(3) {
+            background-color: rgba(101, 135, 255, 1); /* Adjust color of third triangle */
+        }
+        .triangle:nth-child(4) {
+            background-color: rgba(139, 255, 84, 1); /* Adjust color of fourth triangle */
+        }
     }
 
 }
@@ -1193,8 +1175,8 @@
 
 }
 
-// Responsive Styles
 
+// Responsive Styles
 @media screen and (max-width: 768px){
     .des{
         /* mobile: HOME */
@@ -2145,54 +2127,43 @@
             width: 100px;
             height: 100px;
 
+            position: relative;
+            overflow: hidden;
+
 
             /* Inside auto layout */
             flex: none;
             order: 0;
             flex-grow: 0;
 
-            div{
-                width: 0px;
-                height: 0px;
-                border-left: 50px solid transparent;
-                border-right: 50px solid transparent;
-                
-            }
-              
-            .red{
-                
-                border-top: 50px solid 
-                rgba(255, 82, 82, 1);
-                
-                
-            }
-              
-            .blue{
-                
-                border-top: 50px solid rgba(101, 135, 255, 1);
-                -webkit-transform: rotate(180deg);
-            }
-              
-            .green{
-                
-                border-top: 50px solid rgba(139, 255, 84, 1);
-                -webkit-transform: rotate(270deg);
+            .triangle {
                 position: absolute;
-                left: 113px;
-                bottom: 0px;
-                top: 2631px;
-                right: 0px;
-                
+                width: 100%;
+                height: 100%;
+                clip-path: polygon(0% 0%, 50% 50%, 0% 100%);
             }
               
-            .yellow{
-                
-                border-top: 50px solid rgba(233, 255, 96, 1);
-                -webkit-transform: rotate(90deg);
-                position: absolute;
-                top: 2631px;
-                left: 162px;
-                
+            
+            .triangle:nth-child(2) {
+                transform: rotate(90deg); /* Rotate second triangle */
+            }
+            .triangle:nth-child(3) {
+                transform: rotate(180deg); /* Rotate third triangle */
+            }
+            .triangle:nth-child(4) {
+                transform: rotate(-90deg); /* Rotate fourth triangle */
+            }
+            .triangle:nth-child(1) {
+                background-color: rgba(255, 82, 82, 1); /* Adjust color of first triangle */
+            }
+            .triangle:nth-child(2) {
+                background-color: rgba(233, 255, 96, 1); /* Adjust color of second triangle */
+            }
+            .triangle:nth-child(3) {
+                background-color: rgba(101, 135, 255, 1); /* Adjust color of third triangle */
+            }
+            .triangle:nth-child(4) {
+                background-color: rgba(139, 255, 84, 1); /* Adjust color of fourth triangle */
             }
 
         }
