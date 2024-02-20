@@ -155,7 +155,7 @@
     isolation: isolate;
 
     width: 100%;
-    height: 550px;
+    height: 100vh;
     transition: background-image 1s ease-in-out;
     background-size: cover; /* or contain, or specific size */
     background-position: center; /* or other position */
@@ -173,16 +173,16 @@
         align-items: center;
         justify-content: center;
         position: absolute;
-        top: 290px;
+        top: 245px;
         width: 100%;
-        height: 48px;
+        height: 38px;
         // left: 0px;
         // right: 0px;
         // bottom: 200px;
 
         background: #6A45FF;
         color: white;
-        font-size: 32px;
+        font-size: 24px;
         
         
 
@@ -196,11 +196,11 @@
     .logo2{
         /* Logo */
 
-        width: 445.56px;
-        height: 145.4px;
+        width: 274.56px;
+        height: 88.4px;
 
         position: absolute;
-        top: 180px;
+        top: 160px;
 
         /* Inside auto layout */
         flex: none;
@@ -229,7 +229,7 @@
         height: 144px;
 
         position: absolute;
-        top: 320px;
+        top: 250px;
         // left: 150px;
         
 
