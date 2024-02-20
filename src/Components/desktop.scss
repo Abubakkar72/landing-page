@@ -12,11 +12,11 @@
     isolation: isolate;
 
     position: absolute;
-    width: 1920px;
-    height: 1080px;
+    width: 100%;
+    // height: 1080px;
     // left: 3538px;
     // top: 587px;
-    overflow-y: scroll;
+    // overflow-y: scroll;
 
     background: #FFFFFF;
     border: 1px solid #000000;
@@ -37,8 +37,8 @@
 
 
     position: absolute;
-    width: 1920px;
-    height: 64px;
+    width: 100%;
+    height: 44px;
     left: 0px;
     top: 0px;
 
@@ -56,7 +56,8 @@
 
         width: 185px;
         height: 51px;
-        margin-left: 50px;
+        margin-left: 30px;
+        margin-top: 14px;
 
 
         /* Inside auto layout */
@@ -75,7 +76,6 @@
         align-items: center;
         padding: 0px;
         gap: 120px;
-        margin-left: 380px;
 
         // width: 454px;
         height: 26px;
@@ -93,7 +93,7 @@
         top: 0;
         right: 0;
         height: 100vh;
-        width: 250px;
+        width: 150px;
         z-index: 999;
         background-color: rgba(255, 255, 255, 0.479);
         backdrop-filter: blur(20px);
@@ -154,7 +154,7 @@
     gap: 64px;
     isolation: isolate;
 
-    width: 1920px;
+    width: 100%;
     height: 1080px;
     transition: background-image 1s ease-in-out;
     background-size: cover; /* or contain, or specific size */
@@ -169,16 +169,20 @@
     .rectangle{
         /* Rectangle 5 */
 
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
+        top: 756px;
+        width: 100%;
         height: 48px;
-        left: 0px;
-        right: 0px;
-        bottom: 200px;
+        // left: 0px;
+        // right: 0px;
+        // bottom: 200px;
 
         background: #6A45FF;
         color: white;
         font-size: 32px;
-        width: 1920px;
         
         
 
@@ -213,19 +217,20 @@
         /* Auto layout */
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
+        text-align: center;
         // padding: 0px 233px;
         color: white;
-        font-size: 32px;
+        font-size: 24px;
         
 
-        width: 1600px;
+        width: 1080px;
         height: 144px;
 
         position: absolute;
-        top: 820px;
-        left: 150px;
+        top: 800px;
+        // left: 150px;
         
 
 
@@ -276,8 +281,8 @@
     gap: 64px;
     isolation: isolate;
 
-    width: 1920px;
-    height: 1174px;
+    width: 100%px;
+    height: 900px;
 
     background: #FFFFFF;
 
@@ -294,9 +299,9 @@
 
 
         position: absolute;
-        width: 280px;
-        height: 1174px;
-        left: calc(50% - 280px/2);
+        width: 180px;
+        height: 900px;
+        left: calc(50% - 190px/2);
         // top: 0px;
         // bottom: 0px;
 
@@ -318,8 +323,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 50px;
-        padding-top: 180px;
+        padding: 0px;
+        padding-top: 150px;
         gap: 8px;
         color: white;
 
@@ -353,7 +358,7 @@
         align-items: flex-start;
         padding-top: 380px;
 
-        width: 1920px;
+        width: 100%px;
         height: 600px;
 
 
@@ -378,8 +383,8 @@
             padding: 0px;
             gap: 40px;
 
-            width: 640px;
-            height: 600px;
+            width: 340px;
+            height: 300px;
 
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-alpha-sig.figma.com/img/40f8/c545/7746a488a1416d22e0b8b405b3300bf2?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bL3DJOB3p3uWeTssl3vN3zqvweoJ6YudR1-u-0mW82LOsmKPpwT72MyywUCkIm1JCBuo9DR3hm546E2yev3~~Zuu31j-UKiTT1Jh9CjXJPzmcTnMUGFWt~uT-~VDAjOmDWKz3bexil70mc5oxFj9IHVmh20ALjp0l6jT9SknOER-JMT84NMlVFZOHTFN6YYFgKZ9oKsVhv9wvd6cetAtsBZMgmrnPzDYHwr55JlOoy4AIgYslcv6WVM~0tOsf1OLB3QkvRqDA-GGR1k7DYrLzTU1XDCkvWhdMTCmxwwGnwx1CcxxtRqnllaY4qzD2eACAmJjylpQvSQKP9FNoX1Uxw__);
             background-size: cover;
@@ -395,14 +400,14 @@
             .number{
                 /* 01 */
 
-                width: 449.04px;
-                height: 38px;
+                width: 249.04px;
+                height: 19px;
 
                 /* Ja/24px-Medium */
                 font-family: 'Noto Sans';
                 font-style: normal;
                 font-weight: 600;
-                font-size: 24px;
+                font-size: 20px;
                 line-height: 160%;
                 /* or 38px */
                 text-align: center;
@@ -420,13 +425,13 @@
             .title{
                 /* 保有総トン数三河No.1 */
 
-                width: 449.04px;
-                height: 104px;
+                width: 300px;
+                height: 52px;
 
                 font-family: 'Noto Sans';
                 font-style: normal;
                 font-weight: 600;
-                font-size: 32px;
+                font-size: 22px;
                 line-height: 52px;
                 /* or 162% */
                 text-align: center;
@@ -444,18 +449,19 @@
             .description{
                 /* 大型重機を複数台取り扱い、日本でも今のところ十数台しかないような重機も保有。地域的にトップクラス数と種類を取り揃える。 */
 
-                width: 434px;
-                height: 60px;
+                width: 365px;
+                height: 30px;
 
                 /* Ja/20px-Regular */
                 font-family: 'Noto Sans';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 20px;
+                font-size: 16px;
                 line-height: 150%;
                 /* or 30px */
                 text-align: center;
                 letter-spacing: 0.05em;
+                margin-top: 30px;
 
                 color: #FFFFFF;
 
@@ -482,8 +488,8 @@
             padding: 0px;
             gap: 40px;
 
-            width: 640px;
-            height: 600px;
+            width: 340px;
+            height: 300px;
 
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-alpha-sig.figma.com/img/40c0/f50b/46b2300f00a14d64a977ec879165fcc1?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jxaOjfpfv1~d3nArtq0EsT~07kEI7eZVrmFXaksMPNnKD1qy-YXeXlyWclxuc9fUAgyIhDlXLT~JEURY3UxmJE8t1rGY6HNMbSozN2aOvEHOfxUkBApTnZYXKJsYgs-YrdX4DhC8fI6rxso~JnvIJsaoBVTsStSfd9mAR6rhRoowtb-XO2itMAXoAXIzXv-WPCztMrkP3UAF-IisozjKdhKrzRiXJOr1a2SZmC6WRWUNy3uBBWaLgKweCbE~V1tLL7cE~jiu2B37w1gMl4SoJG1mX~faB-fcovkv7Chwo5wI4joyTwq7qUWLRtY~6gvtgWXTiEAQ3-ZOHlwcGox3Gg__);
             background-size: cover;
@@ -499,14 +505,13 @@
             .number{
                 /* 01 */
 
-                width: 449.04px;
-                height: 38px;
-
+                width: 249.04px;
+                height: 19px;
                 /* Ja/24px-Medium */
                 font-family: 'Noto Sans';
                 font-style: normal;
                 font-weight: 600;
-                font-size: 24px;
+                font-size: 20px;
                 line-height: 160%;
                 /* or 38px */
                 text-align: center;
@@ -524,13 +529,13 @@
             .title{
                 /* 保有総トン数三河No.1 */
 
-                width: 449.04px;
-                height: 104px;
+                width: 300px;
+                height: 52px;
 
                 font-family: 'Noto Sans';
                 font-style: normal;
                 font-weight: 600;
-                font-size: 32px;
+                font-size: 22px;
                 line-height: 52px;
                 /* or 162% */
                 text-align: center;
@@ -548,18 +553,19 @@
             .description{
                 /* 大型重機を複数台取り扱い、日本でも今のところ十数台しかないような重機も保有。地域的にトップクラス数と種類を取り揃える。 */
 
-                width: 434px;
-                height: 60px;
+                width: 365px;
+                height: 30px;
 
                 /* Ja/20px-Regular */
                 font-family: 'Noto Sans';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 20px;
+                font-size: 16px;
                 line-height: 150%;
                 /* or 30px */
                 text-align: center;
                 letter-spacing: 0.05em;
+                margin-top: 30px;
 
                 color: #FFFFFF;
 
@@ -585,8 +591,8 @@
             padding: 0px;
             gap: 40px;
 
-            width: 640px;
-            height: 600px;
+            width: 340px;
+            height: 300px;
 
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-alpha-sig.figma.com/img/ebac/526e/044cb65dd089cf0863aeb45d88915340?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Qz9j9G6FKPLOf6f4p~r5vM7iHYDe3A5vsIrYgGboT93CznTr9ySXhzZMeDjY6~xzUWXU5YnS5ClkHEeAp12gbus3L8dpqL5W4mS0gZF4M2z4rmtE~S~WtoTDQZm3AF0bOEZa~Y3HoiTlCy6r8FnY94QrH2sjH1HS7S~OzrVp-Ki6MlA1ICef5gu0tzFp-0DypDFyj49yc9pkdZkoDIZoA-nepOp9BYs~YrXtq6XAgh95boSo3UoLB8BpSnxrKpeETT7IcoPJaflmFh6VdBz~wd7UjppiDRh6iCJ-LdXPMameNlltgGeCWA0EBwJPRDzvZ-CCCVB0CGvc6e7mJVW4UA__);
             background-size: cover;
@@ -602,14 +608,14 @@
             .number{
                 /* 01 */
 
-                width: 449.04px;
-                height: 38px;
+                width: 249.04px;
+                height: 19px;
 
                 /* Ja/24px-Medium */
                 font-family: 'Noto Sans';
                 font-style: normal;
                 font-weight: 600;
-                font-size: 24px;
+                font-size: 20px;
                 line-height: 160%;
                 /* or 38px */
                 text-align: center;
@@ -627,13 +633,13 @@
             .title{
                 /* 保有総トン数三河No.1 */
 
-                width: 449.04px;
-                height: 104px;
+                width: 300px;
+                height: 52px;
 
                 font-family: 'Noto Sans';
                 font-style: normal;
                 font-weight: 600;
-                font-size: 32px;
+                font-size: 22px;
                 line-height: 52px;
                 /* or 162% */
                 text-align: center;
@@ -651,18 +657,19 @@
             .description{
                 /* 大型重機を複数台取り扱い、日本でも今のところ十数台しかないような重機も保有。地域的にトップクラス数と種類を取り揃える。 */
 
-                width: 434px;
-                height: 60px;
+                width: 365px;
+                height: 30px;
 
                 /* Ja/20px-Regular */
                 font-family: 'Noto Sans';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 20px;
+                font-size: 16px;
                 line-height: 150%;
                 /* or 30px */
                 text-align: center;
                 letter-spacing: 0.05em;
+                margin-top: 30px;
 
                 color: #FFFFFF;
 
@@ -692,8 +699,8 @@
     gap: 120px;
     isolation: isolate;
 
-    width: 1920px;
-    height: 840px;
+    width: 100%px;
+    height: 640px;
 
     background: #DCE1E6;
 
@@ -708,10 +715,10 @@
         /* Rectangle 4 */
 
         position: absolute;
-        width: 280px;
-        height: 840px;
+        width: 180px;
+        height: 640px;
 
-        left: calc(50% - 280px/2);
+        left: calc(50% - 190px/2);
         // top: 0px;
         // bottom: 0px;
 
@@ -729,8 +736,8 @@
             Image Block
             */
 
-            width: 750px;
-            height: 440px;
+            width: 450px;
+            height: 250px;
 
             background: url(https://s3-alpha-sig.figma.com/img/cb32/eb69/29dc45e5c648ff07000ce1feedef6ad2?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ixN0kJMHrGx48~4hSlRBodadAwzCCJ--pJ4PFMny2gbjtqoZEgfLLeeHCdtlNVWbJAYBvglYqos~be~wniMo5iIUjA-8KDly5v17ceqoCW4ty7jDPuVWCry-s6ro0sVSWbwHTTclnBs53WW0p~vSk4bBzte63IVOOVN9t3e4m4xRqiWasdUORKIWXId86tvMW7ErYlNPAxHiLMcurMzWT6LEGjZQguXHySF~sOUyrwm1f-CMRVWkhCB-vhjnLquGdPbkgl-~BQI3gal10crBRQGDB2h21c~baFy6CUKGQspkhmPckHf3c242gS~uZyGpt8zA7tMgsyM4pyMqLU4s9g__);
             background-size: cover;
@@ -739,7 +746,7 @@
 
             position: absolute;
             right: 50px;
-            top: 230px;
+            top: 150px;
 
             /* Inside auto layout */
             flex: none;
@@ -759,15 +766,15 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 0px;
-        gap: 64px;
+        gap: 32px;
 
-        width: 440px;
+        width: 330px;
         height: 319px;
 
         position: absolute;
-        right: 300px;
+        right: 60px;
         
-        padding-top: 100px;
+        // padding-top: 100px;
 
 
         /* Inside auto layout */
@@ -776,26 +783,7 @@
         flex-grow: 0;
         z-index: 2;
 
-        .frame21{
-            /* Frame 21 */
-
-            /* Auto layout */
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 0px;
-            gap: 32px;
-
-            width: 440px;
-            height: 203px;
-
-
-            /* Inside auto layout */
-            flex: none;
-            order: 0;
-            flex-grow: 0;
-
-            .frame20{
+        .frame20{
                 /* Frame 20 */
 
                 box-sizing: border-box;
@@ -807,7 +795,7 @@
                 padding: 0px;
                 gap: 40px;
 
-                width: 440px;
+                width: 350px;
                 height: 51px;
 
                 border-bottom: 8px solid #6A45FF;
@@ -828,7 +816,7 @@
                     font-family: 'Noto Sans';
                     font-style: normal;
                     font-weight: 600;
-                    font-size: 32px;
+                    font-size: 24px;
                     line-height: 160%;
                     /* or 51px */
                     letter-spacing: 0.3em;
@@ -845,10 +833,28 @@
 
             }
 
+        .frd{
+            /* Frame 21 */
+
+            /* Auto layout */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 32px;
+
+            width: 370px;
+            height: 203px;
+
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+
             span{
                 /* トップクラスのクレーンを手配・運搬・作業まで一貫して行います。トップクラスのクレーンを手配・運搬・作業まで一貫して行います。トップクラスのクレーンを手配・運搬・作業まで一貫して行います。 */
 
-                width: 440px;
+                width: 300px;
                 height: 120px;
                 text-align: left;
 
@@ -856,7 +862,7 @@
                 font-family: 'Noto Sans';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 16px;
+                font-size: 10px;
                 line-height: 150%;
                 /* or 24px */
                 letter-spacing: 0.05em;
@@ -868,7 +874,6 @@
                 flex: none;
                 order: 1;
                 flex-grow: 0;
-
             }
 
         }
@@ -885,6 +890,9 @@
 
             width: 219px;
             height: 52px;
+
+            position: absolute;
+            bottom: 80px;
 
 
             /* Inside auto layout */
@@ -979,8 +987,8 @@
     padding: 200px 0px;
     gap: 120px;
 
-    width: 1920px;
-    height: 550px;
+    width: 100%;
+    height: 180px;
 
     background: #FFFFFF;
 
@@ -1065,7 +1073,7 @@
     padding: 80px 0px;
     gap: 56px;
 
-    width: 1920px;
+    width: 100%px;
     height: 392px;
 
     background: #5D6273;
@@ -1136,7 +1144,7 @@
         gap: 24px;
         border-top: 4px solid #FFFFFF;
 
-        width: 1280px;
+        width: 800px;
         height: 100px;
 
 
@@ -1239,8 +1247,8 @@
 
         .logo{
             position: absolute;
-            left: -70px;
-            top: 8.91px;
+            left: -20px;
+            top: -10px;
 
             .L1{
                 width: 124px;
@@ -1970,8 +1978,8 @@
             border-bottom: 4px solid #6A45FF;
 
             position: absolute;
-            left: 366px;
-            top: -30px;
+            left: 16px;
+            top: -100px;
 
 
             span{
@@ -1988,6 +1996,7 @@
                 line-height: 160%;
                 /* identical to box height, or 32px */
                 letter-spacing: 0.3em;
+                padding-left: 20px;
 
                 color: #000000;
 
@@ -2005,8 +2014,8 @@
         .frd{
 
             position: absolute;
-            bottom: 0px;
-            left: 390px;
+            bottom: -100px;
+            left: 50px;
             width: 300px;
             text-align: left;
 
@@ -2051,8 +2060,8 @@
             height: 40px;
 
             position: absolute;
-            left: 375px;
-            bottom: -90px;
+            left: 35px;
+            top: 330px;
 
 
             /* Inside auto layout */
