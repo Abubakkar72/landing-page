@@ -1,20 +1,48 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './desktop.scss';
 
-const showSidebar = () =>{
-    const sidebar = document.querySelector('.sidebar')
+//responsive sidebar start
+    const showSidebar = () =>{
+        const sidebar = document.querySelector('.sidebar')
 
-    sidebar.style.display = 'flex'
-}
+        sidebar.style.display = 'flex'
+    }
 
-const hideSidebar = () =>{
-    const sidebar = document.querySelector('.sidebar')
+    const hideSidebar = () =>{
+        const sidebar = document.querySelector('.sidebar')
 
-    sidebar.style.display = 'none '
-}
+        sidebar.style.display = 'none '
+    }
+//responsive sidebrend
 
 const Desktop = () => {
 
+    //background carosel start
+        useEffect(() => {
+
+            const images = ['https://s3-alpha-sig.figma.com/img/754a/f64a/7259f8ece71ae230e41c3a2c6709f5db?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jdPPs4~27KInlrnJ~VMFX8d51OZVpIkauu7oHiIydbkM3gCuI2lDigXX64bIksiMDYyBh1nPgheskDzfBcxmxVPgeibtMPc5957Qc5joT0avfe~nO9COT~4QyTKtS3hFhi9o2C5QfoZtBUU60H~ePD-MPF7JteTycegir94wYiXYNd0eekMSq8OKet7Lm4DcMqm8Tfr4-YALN-tJN15nTxWdAeLMuwTjL0VM5iDoFvF95BHmxKeicadh2qjjxx3AIiKPD~QTHQvVsToJO1BDRaXylP2E7qj1Nvs0k6riHjchx3TzWr8B8awo2mD1yT6f5gc4Xe~DuXG7PitKNvYBzA__',
+        
+            'https://s3-alpha-sig.figma.com/img/40c0/f50b/46b2300f00a14d64a977ec879165fcc1?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gxssR2VQMB8TaiYGNMQJwHpdmDGVa8vR2261z9W5Yg0rmLQE-vPvgtBCCIf7brk85TPQB1-S5Cbb4-t3Gtr502iZNP4DqHDUjy1F9MYXGEOcf1N5M5zNJH0goUrhvOQ9szw0N8RiGRsd6Ie~N9QA7nDQiWWmqXFYpMzGpHddjgyDgPrdqZXMU-Db8UL147pEonx6WtyEfUwTEWnTiVovpWpQigzokpxmMuEx1puHV9g1iiA6YmxkhoReQkcyMT4ZGbfQENqsLQrW8mXi20e7FCB-GxHmaEun85m3DpJSxhXe1k2EYzGREgJT11ngbd~xWjMZabtx4icyKiC9-NWM0A__',
+        
+            'https://s3-alpha-sig.figma.com/img/ebac/526e/044cb65dd089cf0863aeb45d88915340?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QgnRnWtKI54wLZAAVhhTzNFvMbTsfwSuE9L40T~PkDDyphQBgKnE1v00qWyU5jy34pC7cuafvsWNZ37V7~R7q2PsxkKir4lPCyKqGv0fmH~JdcTkmH63BBM~NiCSvpBBcY-1I2Mbk3VKzKo2wg63voh9gsUwYxtCBB95dplq-ty1HPv7pfiIch9wvWBHk12QE~cpEeCcI4HknL6nxFFpqDA00MPzjcKu3wUFDENzWgyZpOvSTTLMDgSnPIhjMz7tvM8Z3WhnjNG1T7TWZbyHXT-CcE3Jn3cpDFLLX1evxV0cL6G~QnH1BR9mcT7A4hE0zXJM6sxyTQO91tF2ZSUGYg__'];
+        
+        
+            let currentImageIndex = 0;
+            const carouselContainer = document.getElementById('backgroundCarousel');
+        
+            function changeBackgroundImage() {
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                carouselContainer.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+            }
+        
+            // Auto advance the carousel every 3 seconds
+            setInterval(changeBackgroundImage, 3000);
+        
+            // Show the first image initially
+            carouselContainer.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+            
+        }, []); 
+    //background carousel end
 
     return (
         <div className="desktop">
@@ -49,7 +77,7 @@ const Desktop = () => {
                     </div>
 
                     {/* Hero Section*/}
-                    <div className="hero">
+                    <div className="hero" id="backgroundCarousel">
                         <div className="rectangle">
                             <span>Lorem ipsum dolor sit amet</span>
                         </div>
@@ -151,10 +179,10 @@ const Desktop = () => {
                     {/* BodyF Section */}
                     <div className="bodyF">
                         <div className="group">
-                            <div class="red"></div>
-                            <div class="blue"></div>
-                            <div class="green"></div>
-                            <div class="yellow"></div>
+                            <div class="triangle"></div>
+                            <div class="triangle"></div>
+                            <div class="triangle"></div>
+                            <div class="triangle"></div>
                         </div>
                     </div>
 
